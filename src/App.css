@@ -1,5 +1,27 @@
 .App {
+  background-color: #282c34;
+  min-height: 100vh;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(8px + 2vmin);
+  color: white;
   text-align: center;
+}
+
+#root {
+  background-color: #282c34;
+}
+
+body {
+  background-color: #282c34;
+}
+
+.div{
+  display: block;
 }
 
 .App-logo {
@@ -7,11 +29,85 @@
   pointer-events: none;
 }
 
+.carousel {
+  height: 100%;
+  width: 100%;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin-block-start: .3em;
+  margin-block-end: .3em;
+}
+
+h4 {
+  display: inline-block;
+  margin-block-start: .3em;
+  margin-block-end: .3em;
+  color: rgb(119, 151, 156);
+}
+
+.exp_panel {
+  border-radius: 25px;
+  margin: 5% 0;
+  background-color: rgb(119, 151, 156);
+  height: 30vh;
+  width: 100%;
+}
+
+.experience{
+  width: 100%;
+}
+
+.exp_sub_panel {
+  height:80%;
+  font-size: 1.9vh;
+  width:auto;
+}
+
+.active-carousel-item {
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  position: relative;
+  z-index: 2;
+}
+
+.content {
+  width: 90%;
+  
+}
+
+
+.Projects {
+  height: 65vh;
+  width: 100%;
+}
+
+.Project_slider {
+  border-radius: 25px;
+  margin-top: 5%;
+  background-color: rgb(119, 151, 156);
+  height:65%;
+  width: 100%;
+  
+}
+
+.panel {
+  width: 88%;
+  margin: auto;
+  
+}
+
 
 .App-header {
   background-color: #282c34;
@@ -26,6 +122,16 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.left {
+  float: left;
+  width: 50%;
+}
+
+.right {
+  float: left;
+  width: 50%;
 }
 
 @keyframes App-logo-spin {
