@@ -1,13 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Experience from './Experience';
 import Panel from './Panel';
-import Slider from '@farbenmeer/react-spring-slider';
 import slidesData from './info';
-import './carousel.scss';
 import Carousel from 'react-bootstrap/Carousel';
-import { CarouselItem } from 'react-bootstrap';
 
 
 
@@ -17,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <div className="Personal">
+        <br/>
         <h1>Introduction</h1> 
         Hello, my name is kyle brewster and I am a developer looking for employment. 
         I am well versed in many technologies and would consider myself a full stack
@@ -26,7 +23,7 @@ function App() {
         using tensorflow. 
       </div>
       <div className="Education_Experience">
-        <h1>Work and Education</h1>
+        <br/><h1>Education</h1>
         <h3>University of New Hampshire</h3>
         I completed my BS for Computer Science with a gpa of 3.22.
         I also completed 18 credits towards my Masters and plan to complete my degree by the end of 2021<br/><br/>
@@ -55,6 +52,7 @@ function App() {
         </div>
       </div>
 
+      <h1>Experience</h1>
       <Experience/>
       
       <div className="Skills">
