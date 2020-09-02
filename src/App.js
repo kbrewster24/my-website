@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import Experience from './Experience';
 import Panel from './Panel';
 import slidesData from './info';
@@ -12,6 +12,7 @@ import Carousel from 'react-bootstrap/Carousel';
 function App() {
   return (
     <div className="App">
+      
       <div className="Personal">
         <br/>
         <h1>Introduction</h1> 
