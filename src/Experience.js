@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.scss';
+import './Experience.scss';
 import ExpPanel from './exp_panel'
 
 

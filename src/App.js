@@ -4,6 +4,7 @@ import Experience from './Experience';
 import Panel from './Panel';
 import slidesData from './info';
 import Carousel from 'react-bootstrap/Carousel';
+import './Projects.scss';
 
 
 
@@ -13,7 +14,7 @@ function App() {
   return (
     <div className="App">
       
-      <div className="Personal">
+      <div className="Introduction">
         <br/>
         <h1>Introduction</h1> 
         Hello, my name is kyle brewster and I am a developer looking for employment. 
@@ -108,7 +109,7 @@ function App() {
       <div className="Projects">
         <h1>Projects</h1>
         <div className="Project_slider">
-          <Carousel interval={null}>
+          <Carousel interval="100000">
             <Carousel.Item>
               <Panel header = "Player Scouting app" content="Developed application for
               UNH Men’s soccer team to “scout” upcoming team. 

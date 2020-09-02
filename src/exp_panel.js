@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.scss';
+import './Experience.scss';
 import Carousel from 'react-bootstrap/Carousel';
 import { CarouselItem } from 'react-bootstrap';
 
@@ -23,7 +23,7 @@ class ExpPanel extends React.Component {
       return <div className= "exp_panel">
         <h3>{this.props.header}</h3>
         <div className="exp_sub_panel">
-          <Carousel hasArrows hasBullets>
+          <Carousel interval="1000000">
             <CarouselItem>
               <div className="content">{this.props.introduction}</div>
             </CarouselItem>
