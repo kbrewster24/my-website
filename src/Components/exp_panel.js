@@ -11,25 +11,19 @@ class ExpPanel extends React.Component {
         this.myContent = props.content;
     }
 
-    createHeaders = () => {
-        console.log('test');
-        this.myContent.map(function(c){
-            console.log("test");
-            return <div>content{c}</div>
-        })
-    }
+    
 
     render() {
       return <div className= "exp_panel">
         <h3>{this.props.header}</h3>
         <div className="exp_sub_panel">
-          <Carousel interval="1000000">
+          <Carousel interval={1000000}>
             <CarouselItem>
               <div className="content">{this.props.introduction}</div>
             </CarouselItem>
             {
-              this.myContent.map(function(content){
-                return <CarouselItem><div className="content">{content}</div></CarouselItem>
+              this.myContent.map(function(content, index){
+                return <CarouselItem key={index}><div className="content">{content}</div></CarouselItem>
               })
             }
           </Carousel>
