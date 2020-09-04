@@ -18,27 +18,25 @@ function App() {
         <br/>
         <h1>Introduction</h1> 
         Hello, my name is kyle brewster and I am a developer looking for employment. 
-        I am well versed in many technologies and would consider myself a full stack
+        I am well versed in many technologies and consider myself a full stack
         developer. On the front end I am most experienced with react and focus on simple
         clean user freindly design. On the backend I am comfortable with a range of languages
-        such as Java, Python and Javascript. I am also developing my machine learning Skills
+        such as Java, Python and Javascript. I am developing my machine learning Skills
         using tensorflow. 
       </div>
       <div className="Education_Experience">
         <br/><h1>Education</h1>
         <h3>University of New Hampshire</h3>
-        I completed my BS for Computer Science with a gpa of 3.22.
-        I also completed 18 credits towards my Masters and plan to complete my degree by the end of 2021<br/><br/>
+        I completed my BS for Computer Science.
+        I have also completed 18 credits towards my Masters and plan to complete my degree by the end of 2021<br/><br/>
         Some of the Coursework I have completed:<br/><br/>
         
         <div className="left">
           <h4>Undergrad</h4>
           <ul>
             <li>Artificial Intelligence</li>
-            <li>Data Structures</li>
-            <li>Algorithms</li>
+            <li>Data Structures & Algorithms</li>
             <li>Parallel Programming</li>
-            <li>Operating Systems</li>
             <li>OO Design and Development</li>
             <li>Database Systems</li>
           </ul>
@@ -63,18 +61,18 @@ function App() {
           <h4>Languages</h4>
           <ul>
               <li>Java</li>
-              <li>C</li>
-              <li>C++</li>
+              <li>C/C++</li>
               <li>Javascript</li>
               <li>Python</li>
               <li>R</li>
               <li>HTML/CSS</li>
-              <li>React</li>
+              
             </ul>
             <h4>Concepts</h4>
             <ul>
               <li>Data Structures </li>
               <li>Algorithms</li>
+              <li>Neural Networks</li>
               <li>Machine Learning Methods</li>
             </ul>
            
@@ -94,9 +92,9 @@ function App() {
               <li>MongoDB</li>
               <li>Docker</li>
               <li>AWS</li>
-              <li>Linux</li>
+              <li>React</li>
               <li>Tensorflow</li>
-              <li>Neural Networks</li>
+              
             </ul>
             
           </div>
@@ -105,11 +103,11 @@ function App() {
 
 
 
-
+      <br/>
       <div className="Projects">
         <h1>Projects</h1>
         <div className="Project_slider">
-          <Carousel interval="100000">
+          <Carousel interval={10000}>
             <Carousel.Item>
               <Panel header = "Player Scouting app" content="Developed application for
               UNH Men’s soccer team to “scout” upcoming team. 
@@ -125,7 +123,7 @@ function App() {
               <Panel header = "Driving with Gestures" content="Worked as part of a group to train a convolutional neural net to understand 5 
               different hand gestures. Gestures were used to control a car in a simulated
               pygame environment." 
-              repo="Final_Report.pdf"/>
+              repo="" paper="/Final_Report.pdf"/>
             </Carousel.Item>
 
             <Carousel.Item>
@@ -155,7 +153,31 @@ function App() {
 
       <div className="Personal">
         <h1>Personal</h1>
-        I have played soccer my whole life. 
+        <br/>
+        <h3>Soccer</h3>
+        <div className="Soccer">
+        Soccer has always been a passion of mine. I had a drive and commitnment
+        to be the best player I possibly could from a young age. This drive brought me to the division one level where 
+        I competed for 5 years, won 2 America East titles and helped return the program to the NCAA tournament making it to the sweet 
+        sixteen once and the round of 32 twice.<br/><br/>Being apart of a successful program allowed me to understand the 
+        importance of being a team player in that what you think is best for you might not always be the best
+        for the team. Another invaluable lesson I learned from being a student athlete is time management being 
+        able to balance classes, practices and a social life while you are on the road not sleeping in your own 
+        bed and exhausted from playing in the previous game is not something that every college student gets to 
+        experience and learn from. 
+        </div>
+        <Carousel className="images">
+          <Carousel.Item>
+            <img className="img" src = "/images/soccer.jpeg" alt="soccer"/>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="img" src = "/images/Champions.png" alt="second championship"/>
+            <Carousel.Caption>
+              <p>Winning our second America East Championship</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+        <br/><br/>
       </div>
 
 
