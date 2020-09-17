@@ -47,7 +47,6 @@ class Projects extends React.Component {
 
         </div>
       </div>
-
     }
 }
 

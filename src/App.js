@@ -16,7 +16,7 @@ function App() {
       
       <div className="Introduction">
         <br/>
-        <h1>Introduction</h1> 
+       
         Hello, my name is kyle brewster and I am a developer looking for employment. 
         I am well versed in many technologies and consider myself a full stack
         developer. On the front end I am most experienced with react and focus on simple
